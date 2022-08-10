@@ -2,7 +2,7 @@
 @echo off
 title OHR Cleaner ^| Created by b8ff
 
-:: Automaticly asking for Admin
+:: Ask for Admin
 (Net session > nul 2>&1)||(PowerShell start """%~0""" -verb RunAs & Exit /B)
 
 :: Start
