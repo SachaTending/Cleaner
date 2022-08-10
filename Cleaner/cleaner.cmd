@@ -3,7 +3,7 @@
 title OHR Cleaner ^| Created by b8ff
 
 :: Automaticly asking for Admin
-(Net session >nul 2>&1)||(PowerShell start """%~0""" -verb RunAs & Exit /B)
+(Net session > nul 2>&1)||(PowerShell start """%~0""" -verb RunAs & Exit /B)
 
 :: Start
 title OHR Cleaner ^| Created by b8ff
