@@ -23,6 +23,7 @@ echo Stage 1 starting...
 
 timeout /t 1 > nul
 echo  - Creating cleaning process data file...
+cd /D "%~dp0"
 del data.txt > nul 2>&1
 (
 	echo OHR Cleaner Data
