@@ -62,7 +62,12 @@ timeout /t 1 > nul
 echo  - Deleting temporary files...
 del %temp%\*.* /s /q > nul 2>&1
 del c:\windows\prefetch\*.* /s /q > nul 2>&1
-del c:\windows\softwaredistribution\download\*.*  /s /q > nul 2>&1
+del c:\windows\softwaredistribution\download\*.* /s /q > nul 2>&1
+del c:\users\%USERNAME%\Videos\CacheClip /s /q > nul 2>&1
+
+timeout /t 1 > nul
+echo  - Deleting file explorer history...
+del c:\users\%USERNAME%\appdata\roaming\microsoft\windows\recent\*.lnk /s /q > nul 2>&1
 
 timeout /t 1 > nul
 echo  - Flushing Microsoft Store cache...
@@ -94,7 +99,7 @@ echo  - Saving cleaning process data...
 	echo.
 	echo -- Credits
 	echo Author: b8ff -^> OHR founder
-	echo Discord: https://discord.gg/y6KcDSWtcy
+	echo Discord: https://discord.gg/BF8yG5S9FC
 	echo GitHub: https://github.com/b8ff
 	echo -- End
 ) >> data.txt
