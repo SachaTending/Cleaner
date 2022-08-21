@@ -61,9 +61,25 @@ cleanmgr /verylowdisk /c
 timeout /t 1 > nul
 echo  - Deleting temporary files...
 del %temp%\*.* /s /q > nul 2>&1
-del c:\windows\prefetch\*.* /s /q > nul 2>&1
-del c:\windows\softwaredistribution\download\*.* /s /q > nul 2>&1
-del c:\users\%USERNAME%\Videos\CacheClip /s /q > nul 2>&1
+del C:\Windows\Prefetch\*.* /s /q > nul 2>&1
+del C:\Windows\SoftwareDistribution\Download\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\Videos\CacheClip /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\NVIDIA\DXCache\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\NVIDIA\GLCache\*.* /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\GrShaderCache" /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\ShaderCache" /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\Google\DriveFS\Logs\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\Google\DriveFS\cef_cache\Cache\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\Google\DriveFS\cef_cache\Code Cache\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Demos\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\PersistentDownloadDir\ManifestCache\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\webcache_4430 /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Epic Games\EOSOverlay" /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Epic Games\Epic Online Services\UI Helper\Cache" /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Epic Games\Epic Online Services\UI Helper\Logs" /s /q > nul 2>&1
+del "C:\Users\%USERNAME%\AppData\Local\Epic Games\Epic Online Services\UserHelper\Logs" /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\CrashReportClient\Saved\Logs\*.* /s /q > nul 2>&1
+del C:\Users\%USERNAME%\AppData\Local\cache /s /q > nul 2>&1
 
 timeout /t 1 > nul
 echo  - Deleting file explorer history...
@@ -98,9 +114,11 @@ echo  - Saving cleaning process data...
 	echo -- End
 	echo.
 	echo -- Credits
-	echo Author: b8ff -^> OHR founder
+	echo Author: OHR - b8ff
 	echo Discord: https://discord.gg/BF8yG5S9FC
 	echo GitHub: https://github.com/b8ff
+	echo YouTube: https://www.youtube.com/c/OHRTM
+	echo PyPi: https://pypi.org/project/HexBear/
 	echo -- End
 ) >> data.txt
 
