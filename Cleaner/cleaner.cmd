@@ -1,12 +1,12 @@
 :: Echo off / Title
 @echo off
-title OHR Cleaner ^| Created by b8ff
+title OHR Cleaner ^| Created by tweek
 
 :: Ask for Admin
 (Net session > nul 2>&1)||(PowerShell start """%~0""" -verb RunAs & Exit /B)
 
 :: Start
-title OHR Cleaner ^| Created by b8ff
+title OHR Cleaner ^| Created by tweek
 
 echo Welcome to OHR Cleaner!
 
@@ -18,7 +18,7 @@ echo Please don't close the cleaner during the cleaning process!
 :: Stage 1
 timeout /t 4 > nul
 echo.
-title OHR Cleaner ^| Created by b8ff ^| Stage 1
+title OHR Cleaner ^| Created by tweek ^| Stage 1
 echo Stage 1 starting...
 
 timeout /t 1 > nul
@@ -38,7 +38,7 @@ echo Stage 1 completed!
 :: Stage 2
 timeout /t 2 > nul
 echo.
-title OHR Cleaner ^| Created by b8ff ^| Stage 2
+title OHR Cleaner ^| Created by tweek ^| Stage 2
 echo Stage 2 starting...
 
 timeout /t 1 > nul
@@ -50,7 +50,7 @@ echo Stage 2 completed!
 :: Stage 3
 timeout /t 2 > nul
 echo.
-title OHR Cleaner ^| Created by b8ff ^| Stage 3
+title OHR Cleaner ^| Created by tweek ^| Stage 3
 echo Stage 3 starting...
 
 timeout /t 1 > nul
@@ -98,7 +98,7 @@ echo Stage 3 completed!
 :: Stage 4
 timeout /t 2 > nul
 echo.
-title OHR Cleaner ^| Created by b8ff ^| Stage 4
+title OHR Cleaner ^| Created by tweek ^| Stage 4
 echo Stage 4 starting...
 
 timeout /t 1 > nul
@@ -114,11 +114,10 @@ echo  - Saving cleaning process data...
 	echo -- End
 	echo.
 	echo -- Credits
-	echo Author: OHR - b8ff
+	echo Author: OHR - tweek
 	echo Discord: https://discord.gg/BF8yG5S9FC
-	echo GitHub: https://github.com/b8ff
+	echo GitHub: https://github.com/tweekk
 	echo YouTube: https://www.youtube.com/c/OHRTM
-	echo PyPi: https://pypi.org/project/HexBear/
 	echo -- End
 ) >> data.txt
 
@@ -131,7 +130,7 @@ echo Stage 4 completed!
 :: End
 timeout /t 2 > nul
 echo.
-title OHR Cleaner ^| Created by b8ff
+title OHR Cleaner ^| Created by tweek
 echo Cleaning process successfully completed!
 echo Press any key to exit...
 
